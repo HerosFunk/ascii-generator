@@ -1,7 +1,7 @@
-########################  ASCII ART / PROJECT DE NOEL  #####################
+########################  ASCII ART  #####################
 
 
-'by  Léo / Léo / Mohamed / Louis'
+'by  Léo '
 
 
 
@@ -42,7 +42,7 @@ def ascii_art():
 def demander():
     demande = True
     while demande == True:
-        type_recherche = input("Quel type de recherche voulez-vous faire?(1, 2 ou 3) \n \n 1. Recherche d'une image sur internet \n\n 2. Importation d'une image \n\n 3. Superposer deux images \n")
+        type_recherche = input("Quel type de recherche voulez-vous faire?(1, 2) \n \n 1. Recherche d'une image sur internet \n\n 2. Importation d'une image \n\n ")
         if type_recherche == '1':
             
             nom_image = recherche_internet.recherche()
@@ -59,19 +59,7 @@ def demander():
             
             demande = False
             
-        elif type_recherche == '3':
-            
-            image = input("Entrer le chemin de votre image à superposer: ")
-            image_fond = input("Entrer le chemin de votre fond: ")
-            
-            image_s = PIL.Image.open(image)
-            fond = PIL.Image.open(image_fond)
-            
-            nom_image = os.path.splitext(image)[0] + '+' + os.path.splitext(image_fond)[0]
-            path = nom_image + ".jpg"
-            superposer(image_s,fond,nom_image)
-            
-            demande = False
+       
             
         else:
             
@@ -156,19 +144,7 @@ def ouvrir(name):
 #########################
         
         
-def superposer(image,fond,nom):
 
-
-    
-    image = redimensionner(image,400)
-    fond = redimensionner(fond, 800)
-    
-    
-    
-    (largeur_img, hauteur_img) = image.size
-    (largeur_fond, hauteur_fond) = fond.size
-    fond.paste(image, ((largeur_fond-largeur_img)//2,(hauteur_fond-hauteur_img)//2), image)
-    fond.save(nom +".jpg","JPEG")
     
     
 
