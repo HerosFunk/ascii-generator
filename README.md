@@ -1,9 +1,16 @@
 # ascii-generator
+============================================================================================================================================
+=========================================== PROJET SCOLAIRE classe de terminale lycée raymond queneau ======================================= 
+============================================================================================================================================
+Programme python qui genere une image en ASCII-ART à partir d'une image importé, ou d'un mot donné.
+Soit l'utilisateur donne le chemin de son image original, soit une page internet s'affiche avec la recherche du mot choisi et il peut décider quelle image générer en ASCII-ART
 
-programme python qui genere une image en ASCII-ART à partir d'un mot choisis.
-Le programme affiche la recherche internet et l'utilisateur peut choisir l'image qu'il veut obtenir.
+============================================================================================================================================
+============================================                 SCHOOL PROJECT                            =====================================
+============================================================================================================================================
+Python program that generates an ASCII-ART image from an imported image, or from a given word.
+Either the user gives the path to his original image, or a web page is displayed with the search for the chosen word and he can decide which image to generate in ASCII-ART
 
-python program that generates an ASCII-ART image from a chosen word. 
-The program displays the internet search and the user can choose the image he wants to get.
+============================================================================================================================================
 
 by Léo Richez
