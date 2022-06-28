@@ -30,7 +30,7 @@ def url_img(url,driver,mot):
     imgurl = driver.find_element_by_xpath('//*[@id="islrg"]/div[1]/div['+str(n)+']/a[1]')
     time.sleep(2)                         
                                           
-                                          ##//div//div//div//div//div//div//div//div//div//div['+str(n)+']//a[1]//div[1]//img[1]                                         
+                                                                                
     imgurl.click()
     time.sleep(2)
     
