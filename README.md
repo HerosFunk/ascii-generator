@@ -1,4 +1,4 @@
-# ascii-generator
+# ASCII-Generator
 
 =========================== PROJET SCOLAIRE ======================  
 
