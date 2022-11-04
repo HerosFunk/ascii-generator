@@ -11,5 +11,12 @@ Python program that generates an ASCII-ART image from an imported image, or from
 Either the user gives the path to his original image, or a web page is displayed with the search for the chosen word and he can decide which image to generate in ASCII-ART
 
 ========================
+REQUIREMENT : 
+
+in cmd : 
+- pip install selenium
+
+
+=========================
 
 by Léo Richez
