@@ -19,5 +19,5 @@ in cmd :
 
 =========================
 
-by Léo Richez
+by HerosFunk
 
