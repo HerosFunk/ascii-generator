@@ -12,9 +12,11 @@ Either the user gives the path to his original image, or a web page is displayed
 
 ========================
 REQUIREMENT : 
-
-in cmd : 
-- pip install selenium
+ 
+- Have python3 installed
+- install selenium ( pip install selenium in cmd)
+- Lauch main.py
+- Enjoy
 
 
 =========================
