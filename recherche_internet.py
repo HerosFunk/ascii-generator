@@ -1,6 +1,9 @@
 from selenium import webdriver
 import time
 import requests
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 import shutil
 
 
@@ -21,8 +24,13 @@ def url_img(url,driver,mot):
     grâce à son xpath
     """
     
-    driver.get(url)    
+    driver.get(url)
+    acceptCookiesUrl = driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button/div[3]')
+    
+    driver.execute_script("arguments[0].click();", WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="yDmH0d"]/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button/div[3]'))))
+    
     time.sleep(1)
+    
      
     n = int(input("Quelle image souhaitez-vous prendre?(entier attendu)"))
         
@@ -34,7 +42,7 @@ def url_img(url,driver,mot):
     imgurl.click()
     time.sleep(2)
     
-    img = driver.find_element_by_xpath('//*[@id="Sva75c"]/div/div/div[3]/div[2]/c-wiz/div/div[1]/div[1]/div[2]/div/a/img').get_attribute("src")
+    img = driver.find_element_by_xpath('//*[@id="Sva75c"]/div[2]/div/div[2]/div[2]/div[2]/c-wiz/div[2]/div[1]/div[1]/div[2]/div/a/img').get_attribute("src")
                                                                              
                                                
                                         

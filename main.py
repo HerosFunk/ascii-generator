@@ -10,8 +10,9 @@
 
 import os
 import time
-import PIL.Image
+from PIL import Image
 import recherche_internet
+
 
 
 
@@ -68,7 +69,7 @@ def demander():
         
         
         
-        
+    time.sleep(10)
     try:
         
         image = PIL.Image.open(path)
@@ -76,7 +77,7 @@ def demander():
     except:
     
         print(path, "Impossible de trouver l'image ")
-        
+    image = Image.open(path)
     return image, nom_image
 
 ############# Conversion ###############
