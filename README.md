@@ -16,6 +16,7 @@ REQUIREMENT :
 - Have python3 installed
 - install selenium ( pip install selenium in cmd)
 - Lauch main.py
+- Enjoy
 
 
 =========================
