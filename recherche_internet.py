@@ -1,4 +1,13 @@
-from selenium import webdriver
+import os
+
+try:
+     from selenium import webdriver
+except ModuleNotFoundError:
+     os.system("pip install --config-settings=\"--prefix={}\" selenium"
+               .format(os.path.join("./", "_depedencies")))
+     from selenium import webdriver
+     
+
 import time
 import requests
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,7 +20,7 @@ import shutil
 def recherche():
     mot_a_rechercher = input("Que voulez-vous recherchez ?  ")
     url = 'https://www.google.com/search?q='+str(mot_a_rechercher)+'&source=lnms&tbm=isch&sa=X&ved=2ahUKEwie44_AnqLpAhUhBWMBHUFGD90Q_AUoAXoECBUQAw&biw=1920&bih=947'
-
+    
     driver = webdriver.Chrome()
     
     nom, img = url_img(url,driver,mot_a_rechercher)
