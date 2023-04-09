@@ -15,7 +15,7 @@ Either the user gives the path to his original image, or a web page is displayed
 - Launch main.py
 - Enter a number depending on your choice
 - enter a word 
-- enter a your nulber image choice
+- enter a your number image choice
 
 =========================
 
