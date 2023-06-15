@@ -50,13 +50,14 @@ def url_img(url,driver,mot):
         
     
     imgurl = driver.find_element('xpath', '//*[@id="islrg"]/div[1]/div['+str(n)+']/a[1]')
+                                            
     time.sleep(2)                         
                                           
                                                                                 
     imgurl.click()
     time.sleep(2)
     
-    img = driver.find_element('xpath', '//*[@id="Sva75c"]/div[2]/div/div[2]/div[2]/div[2]/c-wiz/div/div[1]/div[2]/div[2]/div/a/img').get_attribute("src")
+    img = driver.find_element('xpath', '//*[@id="Sva75c"]/div[2]/div/div[2]/div[2]/div[2]/c-wiz/div/div/div/div[3]/div[1]/a/img[1]').get_attribute("src")
                                                                      
                                                
                                         
