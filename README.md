@@ -11,7 +11,8 @@ Python program that generates an ASCII-ART image from an imported image, or from
 Either the user gives the path to his original image, or a web page is displayed with the search for the chosen word and he can decide which image to generate in ASCII-ART
 
 ============================================
-
+Pour installer les prerequis : 
+- pip install -r requirements.txt
 - Launch main.py
 - Enter a number depending on your choice
 - enter a word 
