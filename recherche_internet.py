@@ -1,15 +1,13 @@
 import os
 
-try:
-     from selenium import webdriver
-except ModuleNotFoundError:
-     os.system("pip install --config-settings=\"--prefix={}\" selenium"
-               .format(os.path.join("./", "_depedencies")))
-     from selenium import webdriver
-     
+
 
 import time
 import requests
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,11 +20,7 @@ def recherche():
     url = 'https://www.google.com/search?q='+str(mot_a_rechercher)+'&source=lnms&tbm=isch&sa=X&ved=2ahUKEwie44_AnqLpAhUhBWMBHUFGD90Q_AUoAXoECBUQAw&biw=1920&bih=947'
 
     driver = webdriver.Chrome()
-    str1 = driver.capabilities['browserVersion']
-    str2 = driver.capabilities['chrome']['chromedriverVersion'].split(' ')[0]
 
-    if str1[0:2] != str2[0:2]: 
-      print("please download correct chromedriver version")
     
     nom, img = url_img(url,driver,mot_a_rechercher)
     save_img(img,nom)
